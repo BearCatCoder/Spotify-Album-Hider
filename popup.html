@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spotify-Album-Hider</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <h1>Spotify-Album-Hider</h1>
+    <label for="album">Spotify album link</label>
+    <input id="album" type="url" placeholder="https://open.spotify.com/album/…" spellcheck="false">
+    <button id="start">Apply to album</button>
+    <p id="message" role="status" aria-live="polite"></p>
+    <div id="results" hidden>
+      <p id="summary"></p>
+      <ul id="details"></ul>
+    </div>
+    <p class="note">Sign in to Spotify in your browser first. Keep the album tab open while this runs. Only available menu actions are applied.</p>
+    <script src="popup.js"></script>
+  </body>
+</html>

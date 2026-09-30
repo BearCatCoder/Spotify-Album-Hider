@@ -1,0 +1,10 @@
+body { width: 330px; margin: 16px; font: 14px/1.45 system-ui, sans-serif; color: #eee; background: #191919; }
+h1 { margin: 0 0 16px; font-size: 18px; }
+label { display: block; margin-bottom: 6px; }
+input { box-sizing: border-box; width: 100%; padding: 9px; color: #fff; background: #303030; border: 1px solid #777; border-radius: 4px; }
+button { margin-top: 12px; padding: 9px 15px; border: 0; border-radius: 18px; background: #1ed760; color: #111; font-weight: bold; cursor: pointer; }
+button:disabled { opacity: .6; cursor: wait; }
+#message { min-height: 1.4em; }
+#details { max-height: 220px; overflow-y: auto; padding-left: 20px; }
+#details li { margin-bottom: 8px; }
+.note { color: #aaa; font-size: 12px; }

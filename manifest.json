@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Spotify-Album-Hider",
+  "version": "1.0.0",
+  "description": "Apply Spotify's hide-in-album and taste-profile exclusion menu actions to album tracks when available.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://open.spotify.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://open.spotify.com/*"],
+      "js": ["album.js"]
+    }
+  ]
+}
